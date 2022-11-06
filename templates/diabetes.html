@@ -31,13 +31,21 @@
     <h3 class="title">Diabetes Prediction</h3>
     <div class="card">
         <form action="{{ url_for('predict') }}" method="POST">
+            <label>Enter the Pregnancies : </label>
             <input class="form-input" type="text" name="pregnancies" placeholder="Pregnancies eg. 0,1,2" required><br>
+            <label>Enter the Glucose : </label>
             <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80" required><br>
+            <label>Enter the Blood Pressure : </label>
             <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80" required><br>
+            <label>Enter the Skin Thickness : </label>
             <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20" required><br>
+            <label>Enter the Insulin Level : </label>
             <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80" required><br>
+            <label>Enter the Body Mass Index : </label>
             <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1" required><br>
+            <label>Enter the Diabetes Pedigree Function : </label>
             <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52" required><br>
+            <label>Enter the Age (years) : </label>
             <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34" required><br>
 
         <input type="submit" class="my-cta-button" value="predict">
