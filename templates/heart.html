@@ -39,7 +39,12 @@
             <label>Enter the sex : </label>
             <input class="form-input" type="text" name="sex" placeholder="sex (Male:1, female:0)" required><br>
             <label>Enter the chest pain type : </label>
-            <input class="form-input" type="text" name="cp" placeholder="chest pain type eg:1" required><br>
+            <select class="form-input" id="cp" name = "cp" required="required" placeholder="Chest pain type">
+								<option value="1">Typical Angina</option>
+								<option value="2">Atypical Angina</option>
+								<option value="3">Non-Anginal Pain</option>
+								<option value="4">Asymptomatic</option>
+							</select><br>
             <label>Enter the resting blood pressure : </label>
             <input class="form-input" type="text" name="trestbps" placeholder="resting blood pressure in mm Hg eg:130"
                 required><br>
@@ -47,17 +52,25 @@
             <input class="form-input" type="text" name="chol" placeholder="serum cholestoral in mg/dl eg:250"
                 required><br>
             <label>Enter the fasting blood sugar : </label>
-            <input class="form-input" type="text" name="fbs"
-                placeholder="fasting blood sugar 120 mg/dl(1 = true; 0 = false)" required><br>
+            <select class="form-control" id="fbs" name = "fbs" required="required" placeholder="Fasting Blood Sugar">
+								<option value="0">Fasting Blood Sugar < 120 mg/dl</option>
+								<option value="1">Fasting Blood Sugar > 120 mg/dl</option>
+							</select>
+            <br>
             <label>Enter the resting electrocardiographic : </label>
-            <input class="form-input" type="text" name="restecg" placeholder="resting electrocardiographic results eg:1"
-                required><br>
+           <select class="form-input" type="number" id="restecg" name="restecg" required="required" placeholder="Resting Electro-Cardiographic Result">
+								<option value="0">Normal</option>
+								<option value="1">Having ST-T wave abnormality</option>
+								<option value="2">Showing probable or definite left ventricular hypertrophy</option>
+			</select><br>
             <label>Enter the maximum heart rate : </label>
             <input class="form-input" type="text" name="thalach" placeholder="maximum heart rate achieved eg:187"
                 required><br>
             <label>Enter the exercise induced angina : </label>
-            <input class="form-input" type="text" name="exang" placeholder="exercise induced angina (1 = yes; 0 = no)"
-                required><br>
+           <select class="form-input" id="exang" name = "exang" required="required" >
+								<option value="1">Yes</option>
+								<option value="0">No</option>
+							</select><br>
             <label>Enter the ST depression : </label>
             <input class="form-input" type="text" name="oldpeak"
                 placeholder="ST depression induced by exercise relative to rest eg:3.5" required><br>
